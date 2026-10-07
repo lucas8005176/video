@@ -1,0 +1,124 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vídeo do YouTube</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 17px;
+            color: #dbeafe;
+            margin-bottom: 25px;
+        }
+
+        .video {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 15px;
+            background: #000;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #1d4ed8;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #bfdbfe;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎥 Vídeo do YouTube</h1>
+
+        <p>Assista ao vídeo diretamente dentro do site.</p>
+
+        <div class="video">
+            <iframe
+                src="https://www.youtube.com/embed/LkBjOeoHBhA"
+                title="Vídeo do YouTube"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <a
+            class="botao"
+            href="https://youtu.be/LkBjOeoHBhA?si=YzXq76hUdFUeajsF"
+            target="_blank"
+            rel="noopener noreferrer">
+            ▶ Assistir no YouTube
+        </a>
+
+        <footer>
+            Vídeo incorporado do YouTube
+        </footer>
+
+    </div>
+
+</body>
+</html>
+```
